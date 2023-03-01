@@ -1,9 +1,22 @@
 <template>
-  <Tutorial/>
+  <div>
+    <div>{{ response.details.ext_2 }}</div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+  async asyncData({ $axios, app }) {
+    try {
+      const response = await $axios.$get(
+        process.env.BASE_URL + "/rcms-api/4/mission-statement/4"
+      );
+      console.log(response);
+      return { response };
+    } catch (e) {
+      console.log(e.message);
+    }
+  },
+};
 </script>
