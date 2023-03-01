@@ -2,7 +2,7 @@
   <div>
     <!-- <div>{{ response.details.ext_2 }}</div> -->
     <div>Index</div>
-    <div>'{{ process.env.BASE_URL }}'</div>
+    <div>'{{ url }}'</div>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     // } catch (e) {
     //   console.log(e.message);
     // }
-    // return { url: process.env.BASE_URL + "/rcms-api/4/mission-statement/4" };
+    return { url: process.env.BASE_URL + "/rcms-api/4/mission-statement/4" };
   },
 };
 </script>
