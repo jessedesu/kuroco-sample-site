@@ -8,15 +8,16 @@
 <script>
 export default {
   name: "IndexPage",
-  // async asyncData({ $axios, app }) {
-  //   try {
-  //     const response = await $axios.$get(
-  //       process.env.BASE_URL + "/rcms-api/4/mission-statement/4"
-  //     );
-  //     return { response };
-  //   } catch (e) {
-  //     console.log(e.message);
-  //   }
-  // },
+  async asyncData({ $axios, app }) {
+    console.log(process.env.BASE_URL + "/rcms-api/4/mission-statement/4");
+    // try {
+    //   const response = await $axios.$get(
+    //     process.env.BASE_URL + "/rcms-api/4/mission-statement/4"
+    //   );
+    //   return { response };
+    // } catch (e) {
+    //   console.log(e.message);
+    // }
+  },
 };
 </script>
