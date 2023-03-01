@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <div>{{ response.details.ext_2 }}</div> -->
-    <div>Index</div>
+    <div>Index {{ url }}</div>
   </div>
 </template>
 
@@ -9,7 +9,6 @@
 export default {
   name: "IndexPage",
   async asyncData({ $axios, app }) {
-    console.log(process.env.BASE_URL + "/rcms-api/4/mission-statement/4");
     // try {
     //   const response = await $axios.$get(
     //     process.env.BASE_URL + "/rcms-api/4/mission-statement/4"
@@ -18,6 +17,8 @@ export default {
     // } catch (e) {
     //   console.log(e.message);
     // }
+
+    return { url: process.env.BASE_URL + "/rcms-api/4/mission-statement/4" };
   },
 };
 </script>
