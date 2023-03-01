@@ -2,7 +2,7 @@
   <div>
     <!-- <div>{{ response.details.ext_2 }}</div> -->
     <div>Index</div>
-    <div>{{ url }}</div>
+    <div>{{ $config.baseURL }}</div>
   </div>
 </template>
 
