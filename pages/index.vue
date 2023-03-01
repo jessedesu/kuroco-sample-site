@@ -12,7 +12,6 @@ export default {
       const response = await $axios.$get(
         process.env.BASE_URL + "/rcms-api/4/mission-statement/4"
       );
-      console.log(response);
       return { response };
     } catch (e) {
       console.log(e.message);
