@@ -50,4 +50,8 @@ export default {
   privateRuntimeConfig: {
     baseURL: process.env.BASE_URL,
   },
+
+  env: {
+    baseUrl: process.env.BASE_URL,
+  },
 };
